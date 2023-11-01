@@ -63,15 +63,15 @@ function App() {
       {open?(
         <div className="flex mt-5 gap-5 items-center">
           <div className="flex flex-col items-center gap-5">
-            <h1 className="text-white text-3xl">You Picked</h1>
+            <h1 className="text-white text-sm    lg:text-3xl">You Picked</h1>
           <img src={imagesArray[id-1].url} alt="playerChoice" className="w-52"/>
           </div>
           <div className="flex flex-col justify-center gap-5">
-          <h1 className="text-3xl text-white ">{winner}</h1>
+          <h1 className="text-sm    lg:text-3xl text-white ">{winner}</h1>
           <button className="bg-white rounded-md py-2" style={{ color: "hsl(214, 47%, 23%) " }} onClick={()=>setOpen(false)}>PLAY AGAIN</button>
           </div>
           <div className="flex flex-col items-center gap-5">
-          <h1 className="text-white text-3xl">House Picked</h1>
+          <h1 className="text-white text-sm    lg:text-3xl">House Picked</h1>
           <img src={imagesArray[houseId-1].url} alt="houseChoice" className="w-52"/>
           </div>
         </div>
